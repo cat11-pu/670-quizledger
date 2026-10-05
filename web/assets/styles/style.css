@@ -1,0 +1,99 @@
+body {
+  font-family: Roboto, serif;
+  color: #080808;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  text-align: left;
+  font-size: 6vmin;
+}
+
+.math-block {
+  font-size: 16vmin;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 20vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.button-group {
+  margin: auto;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: right;
+}
+
+.button-group button {
+  width: 100%;
+  height: 20vmin;
+  border: none transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vmin;
+  background-color: #bdbdbd;
+  outline: none;
+  text-align: inherit;
+  padding-right: 30px;
+}
+
+.button-group button:active {
+  background-color: #d2d2d2;
+  cursor: pointer;
+}
+
+.settingButton, .backButton {
+  font-size: inherit;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.topic {
+  font-size: 16vmin;
+  text-align: center;
+  cursor: pointer;
+  font-size: 90px;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  line-height: 100px;
+  border: 1px #d2d2d2 solid;
+}
+
+.topic.active {
+  background-color: #d2d2d2;
+}
+.settingAdditional {
+  margin: 70px 15px 0px 15px;
+}
+.settingAdditional label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vmin;
+  margin-right: 10px;
+  width: 31vmin;
+  display: inline-block;
+}
+.settingAdditional input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vmin;
+}
+.settingAdditional input[type=number] {
+  width: 15vmin;
+}

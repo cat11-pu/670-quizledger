@@ -1,0 +1,25 @@
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: mathgen-web-deployment
+spec: 
+  selector: 
+    matchLabels: 
+      app: mathgen-web
+  template: 
+    metadata: 
+      labels: 
+        app: mathgen-web
+    spec: 
+      containers: 
+        - 
+          image: "ledongthuc/mathgen-web:latest"
+          imagePullPolicy: Always
+          name: mathgen-web
+          env:
+          - name: CHROME_ORIGIN_TRIAL
+            valueFrom:
+              secretKeyRef:
+                name: mathgen-web-general
+                key: CHROME_ORIGIN_TRIAL
